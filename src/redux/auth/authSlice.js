@@ -20,3 +20,20 @@ export const authSlice = createSlice({
     });
   },
 });
+
+export const register = createAsyncThunk("auth/register", async (user) => {
+  try {
+    console.log("from store", user);
+    return await authService.register(user);
+  } catch (err) {
+    console.error(err);
+  }
+});
+
+export const login = createAsyncThunk("auth/login", async (user) => {
+  try {
+    return await authService.login(user);
+  } catch (err) {
+    console.error(err);
+  }
+});
