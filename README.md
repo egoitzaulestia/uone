@@ -1,1 +1,1 @@
-# Uone
+# Uone (ongoing student project)
