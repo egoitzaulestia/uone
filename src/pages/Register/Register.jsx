@@ -11,6 +11,8 @@ const Register = () => {
     age: "",
   });
 
+  const { name, email, password, password2, age } = formData;
+
   return (
     <>
       <h1>Register</h1>
